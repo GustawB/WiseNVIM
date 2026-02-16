@@ -17,20 +17,6 @@ map('n', 'gR', '<cmd>Telescope lsp_references<CR>', { desc = 'Find refs' })
 
 vim.api.nvim_set_option("clipboard", "unnamed")
 
--- vim.api.nvim_set_hl(0, "OilBorder", { fg = "#BD93F9", bg = "#1e1e2e" })
--- vim.api.nvim_set_hl(0, "OilBackground", { bg = "#1e1e2e" })
-
--- vim.api.nvim_set_hl(0, "OilConfirmationBorder", { fg = "#8F2222", bg = "#010115" })
--- vim.api.nvim_set_hl(0, "OilConfirmationBackground", { bg = "#010115" })
-
--- vim.api.nvim_set_hl(0, "OilProgressBorder", { fg = "#DAE01B", bg = "#010115" })
--- vim.api.nvim_set_hl(0, "OilProgressBackground", { bg = "#010115" })
-
 vim.diagnostic.config({
 	virtual_lines = true,
-})
-
-vim.api.nvim_create_autocmd('FileType', {
-  pattern = { '*.rs' },
-  callback = function() vim.treesitter.start() end,
 })

@@ -4,7 +4,6 @@ return {
   build = ':TSUpdate',
   branch = 'main',
   opts = {
-    highlight = { enable = true },
     ensure_installed = {
 	"lua",
 	"rust",
