@@ -31,3 +31,12 @@ vim.api.nvim_create_autocmd("UILeave", {
         io.write("\027]111\027\\")
     end,
 })
+
+vim.api.nvim_create_autocmd("InsertLeave", {
+    pattern = "*",
+    callback = function()
+        if vim.bo.modified and vim.bo.buftype == "" then
+            vim.cmd("update")
+        end
+    end,
+})
