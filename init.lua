@@ -9,6 +9,7 @@ local map = vim.keymap.set
 
 map("n", "<leader>e", require("oil").open_float, { desc = "Open Oil floating window" })
 map("n", "<leader>t", "<cmd>Telescope find_files<CR>", { desc = "Telescope find files" })
+map("n", "C-S", require("mini.sessions").write, { desc = "Create new session" })
 
 vim.api.nvim_set_option("clipboard", "unnamed")
 
