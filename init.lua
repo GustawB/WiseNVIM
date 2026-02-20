@@ -9,9 +9,16 @@ local map = vim.keymap.set
 
 map("n", "<leader>e", require("oil").open_float, { desc = "Open Oil floating window" })
 map("n", "<leader>t", "<cmd>Telescope find_files<CR>", { desc = "Telescope find files" })
-map("n", "C-S", require("mini.sessions").write, { desc = "Create new session" })
+map("n", "<C-S>", function()
+    vim.ui.input({ prompt = "Session Name: " }, function(input)
+        if input and input ~= "" then
+            require("mini.sessions").write(input)
+        end
+    end)
+end, { desc = "Create new session" })
+map("n", "<leader>n", "<cmd>NoNeckPain<CR>", { desc = "Toggle NoNeckPain"})
 
-vim.api.nvim_set_option("clipboard", "unnamed")
+vim.opt.clipboard = "unnamedplus"
 
 vim.diagnostic.config({
     virtual_lines = true,
