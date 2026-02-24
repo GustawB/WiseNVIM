@@ -23,7 +23,6 @@ return {
             vim.keymap.set("n", "gF", vim.lsp.buf.type_definition, { desc = "Go to type definition" })
             vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
-            vim.keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", { desc = "Find refs" })
         end
 
         local capabilities = cmp_nvim_lsp.default_capabilities()
