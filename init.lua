@@ -29,8 +29,10 @@ map("n", "<leader>n", "<cmd>NoNeckPain<CR>", { desc = "Toggle NoNeckPain" })
 vim.opt.clipboard = "unnamedplus"
 
 vim.diagnostic.config({
-    virtual_lines = true,
+    virtual_text = false,
 })
+
+vim.keymap.set("n", "<leader>w", vim.diagnostic.open_float)
 
 vim.api.nvim_create_autocmd({ "UIEnter", "ColorScheme" }, {
     callback = function()

@@ -1,1 +1,5 @@
-return { 'nvim-mini/mini.sessions', version = false, opts = {} }
+return {
+    "nvim-mini/mini.sessions",
+    version = false,
+    opts = {},
+}
