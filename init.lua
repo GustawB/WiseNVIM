@@ -35,7 +35,7 @@ vim.diagnostic.config({
     virtual_text = false,
 })
 
-vim.keymap.set("n", "<leader>w", vim.diagnostic.open_float)
+-- vim.keymap.set("n", "<leader>w", vim.diagnostic.open_float)
 vim.keymap.set(
     { "n", "t" },
     "<C-t>",
