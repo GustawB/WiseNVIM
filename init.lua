@@ -40,6 +40,13 @@ vim.keymap.set(
     { noremap = true, silent = true, desc = "Toggle terminal" }
 )
 
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "bash", "c", "cmake", "cpp", "cuda", "dockerfile", "json", "lua", "markdown", "python", "rust", "sql" }, -- Just add more strings, bruh
+    callback = function()
+        vim.treesitter.start()
+    end,
+})
+
 vim.api.nvim_create_autocmd({ "UIEnter", "ColorScheme" }, {
     callback = function()
         local normal = vim.api.nvim_get_hl(0, { name = "Normal" })

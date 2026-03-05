@@ -26,6 +26,8 @@ return {
                 "mypy",
                 "clang-format",
                 "markdownlint",
+                "sqruff",
+                "cmakelang",
             },
         })
     end,

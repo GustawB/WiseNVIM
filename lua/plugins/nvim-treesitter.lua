@@ -22,6 +22,8 @@ return {
             "lua",
             "rust",
             "cuda",
+            "markdown",
+            "sql",
         })
     end,
 }

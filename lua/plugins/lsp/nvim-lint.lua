@@ -6,6 +6,8 @@ return {
             python = { "ruff", "mypy" },
             markdown = { "markdownlint" },
             lua = { "luacheck" },
+            sql = { "sqruff" },
+            cmake = { "cmakelang" },
         }
     end,
 }
