@@ -33,6 +33,12 @@ vim.diagnostic.config({
 })
 
 vim.keymap.set("n", "<leader>w", vim.diagnostic.open_float)
+vim.keymap.set(
+    { "n", "t" },
+    "<C-t>",
+    "<cmd>ToggleTerm direction=float<CR>",
+    { noremap = true, silent = true, desc = "Toggle terminal" }
+)
 
 vim.api.nvim_create_autocmd({ "UIEnter", "ColorScheme" }, {
     callback = function()
