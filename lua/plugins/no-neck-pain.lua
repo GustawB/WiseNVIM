@@ -6,6 +6,7 @@ return {
             autocmds = {
                 skipEnteringNoNeckPainBuffer = true,
             },
+            width = 120,
         })
     end,
 }

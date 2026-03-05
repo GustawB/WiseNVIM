@@ -21,6 +21,7 @@ return {
             "json",
             "lua",
             "rust",
+            "cuda",
         })
     end,
 }
