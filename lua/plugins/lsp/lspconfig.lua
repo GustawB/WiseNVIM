@@ -36,5 +36,12 @@ return {
                 })
             end
         end
+
+        vim.lsp.config("clangd", {
+            cmd = {
+                "clangd",
+                "--query-driver=/**/*",
+            },
+        })
     end,
 }
