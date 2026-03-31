@@ -13,7 +13,6 @@ return {
                 "lua_ls",
                 "clangd",
                 "pyright",
-                "rust_analyzer",
                 "jsonls",
                 "markdown_oxide",
             },
@@ -29,6 +28,7 @@ return {
 
         local default_settings_servers = mason_lspconfig.get_installed_servers()
         for _, v in ipairs(default_settings_servers) do
+            -- For rustceanvim
             if v ~= "jdtls" then
                 vim.lsp.config(v, {
                     on_attach = on_attach,
