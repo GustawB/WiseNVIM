@@ -29,6 +29,17 @@ map("n", "<C-S>", function()
 end, { desc = "Create new session" })
 map("n", "<leader>n", "<cmd>NoNeckPain<CR>", { desc = "Toggle NoNeckPain" })
 
+vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP Code Action" })
+
+local dap = require("dap")
+vim.keymap.set("n", "<Up>", dap.continue, { desc = "Continue" })
+vim.keymap.set("n", "<Down>", dap.step_over, { desc = "Step Over" })
+vim.keymap.set("n", "<Right>", dap.step_into, { desc = "Step Into" })
+vim.keymap.set("n", "<Left>", dap.step_out, { desc = "Step Out" })
+vim.keymap.set("n", "<Leader>b", dap.toggle_breakpoint, { desc = "Toggle Breakpoint" })
+vim.keymap.set("n", "<Leader>b", dap.toggle_breakpoint, { desc = "Toggle Breakpoint" })
+vim.keymap.set("n", "<leader>pq", dap.terminate, { desc = "Quit DAP Session " })
+
 vim.opt.clipboard = "unnamedplus"
 
 vim.diagnostic.config({
