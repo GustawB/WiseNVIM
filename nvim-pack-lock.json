@@ -9,10 +9,6 @@
       "rev": "619363c30309d29ffa631e67c8183f2a72caa373",
       "src": "https://github.com/stevearc/conform.nvim"
     },
-    "dashboard-nvim": {
-      "rev": "f787e3462c2ee2b6117b17c1aa4ddf66cb6f57fe",
-      "src": "https://github.com/nvimdev/dashboard-nvim"
-    },
     "hover.nvim": {
       "rev": "e73c00da3a9c87a21d2a8ddf7ab4a39824bd5d56",
       "src": "https://github.com/lewis6991/hover.nvim"
@@ -91,12 +87,7 @@
     },
     "telescope.nvim": {
       "rev": "427b576c16792edad01a92b89721d923c19ad60f",
-      "src": "https://github.com/nvim-telescope/telescope.nvim",
-      "version": "'*'"
-    },
-    "trouble.nvim": {
-      "rev": "bd67efe408d4816e25e8491cc5ad4088e708a69a",
-      "src": "https://github.com/folke/trouble.nvim"
+      "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "vim-fugitive": {
       "rev": "3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0",
@@ -105,10 +96,6 @@
     "vim-illuminate": {
       "rev": "91313e598ca62e110bc71535c49069b66b9883c9",
       "src": "https://github.com/rrethy/vim-illuminate"
-    },
-    "vim-startify": {
-      "rev": "4e089dffdad46f3f5593f34362d530e8fe823dcf",
-      "src": "https://github.com/mhinz/vim-startify"
     }
   }
 }
