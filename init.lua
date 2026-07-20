@@ -296,6 +296,13 @@ mini_starter.setup({
 
 vim.cmd("colorscheme kanagawa-dragon")
 
+vim.lsp.config("clangd", {
+    cmd = {
+        "clangd",
+        "--query-driver=/**/*",
+    },
+})
+
 vim.keymap.set("n", "<leader>e", require("oil").open_float, { desc = "Open Oil floating window" })
 
 vim.keymap.set("n", "<leader>f", telescope_builtin.find_files, { desc = "Telescope find files" })
