@@ -43,6 +43,7 @@ vim.pack.add({
     "https://github.com/rebelot/kanagawa.nvim",
     "https://github.com/nvim-mini/mini.starter",
     "https://github.com/nvim-mini/mini.sessions",
+    "https://github.com/lewis6991/gitsigns.nvim",
 })
 
 local oil = require("oil")
@@ -62,6 +63,7 @@ local autopairs = require("nvim-autopairs")
 local kanagawa = require("kanagawa")
 local mini_starter = require("mini.starter")
 local mini_sessions = require("mini.sessions")
+local gitsigns = require("gitsigns")
 
 oil.setup({
     default_file_explorer = true,
